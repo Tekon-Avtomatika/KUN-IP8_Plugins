@@ -9,7 +9,7 @@
 
 Данный плагин может быть добавлен в конфигурацию КУН-IP8(4) и будет отображен во вкладке плагины с именем *plugin2*.
 
-![link!](https://github.com/Tekon-Avtomatika/KUN-IP8_Plugins/Demo2/plugin2_1.PNG "Plugins 1")
+![link!](https://github.com/Tekon-Avtomatika/KUN-IP8_Plugins/blob/main/Demo2/plugin2_1.PNG)
 
 Плагин выполняет раз в 10 секунд добавление строки в лог КУН-IP доступный по адресу http://192.168.1.100/cgi-bin/log.cgi
 
