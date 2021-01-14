@@ -4,14 +4,18 @@
 Где:
 - plugin2 - папка плагина
   - service.lua - основной файл плагина
-  - config.lua - файл конфигурации, отображаемый во в
+  - config.lua - подготовка данных для страницы настройки плагина
 - plugin2.tar.gz - упакованный плагин 
 
-Данный плагин может быть добавлен в конфигурацию КУН-IP8(4) и будет отображен во вкладке плагины с именем *plugin2*.
+После добавления в конфигурацию КУН-IP8(4), плагин будет отображен во вкладке плагины с именем *plugin2*.
 
 ![link!](https://github.com/Tekon-Avtomatika/KUN-IP8_Plugins/blob/main/Demo2/plugin2_1.PNG)
 
-Плагин выполняет раз в 10 секунд добавление строки в лог КУН-IP доступный по адресу http://192.168.1.100/cgi-bin/log.cgi
+Вкладка настройки плагина отобразит данные из файла config.lua
+
+![link!](https://github.com/Tekon-Avtomatika/KUN-IP8_Plugins/blob/main/Demo2/plugin2_2.PNG)
+
+После включения, плагин раз в 10 секунд добавляет строку в лог КУН-IP
 
 ```
 Sep 20 10:46:55 cun-ng systemd[1]: Created slice system-luaext.slice.
