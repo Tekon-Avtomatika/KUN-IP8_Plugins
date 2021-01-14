@@ -10,7 +10,7 @@
 
 Плагин не выполняет никаких действий (поскольку файл service.lua - пустой)
 
-Факт запуска плагина отображается в лог КУН-IP доступном по адресу http://IP-адрес/cgi-bin/log.cgi
+Факт запуска плагина отображается в лог КУН-IP доступном по адресу http://192.168.1.100/cgi-bin/log.cgi
 
 ```
 Sep 20 10:44:09 cun-ng systemd[1]: Starting CUN Hardware Management Daemon Lua Extention /etc/luaext.d/plugin1/service.lua...
