@@ -58,3 +58,36 @@
   - 0 (отключено) 
   - 1 (включено).
 - ***cun.relay_set(index, state)*** - переключает реле index в состояние state.
+- ***cun.should_stop()*** - возвращает true (необходимо прервать выполнение скрипта) или false (можно продолжить работу).
+
+## Подготовка скрипта 
+После создание папки скрипта необходимо выполнить ее упаковку в архив. 
+
+В демонстрационных примерах используется сжатие в архив tar.gz с помощью Total Commander.  
+
+## Загрузка плагина на КУН-IP
+Cледует открыть WEB-интерфейс КУН-IP, перейти во вкладку Плагины и загрузить плагин. 
+![link!](https://github.com/Tekon-Avtomatika/KUN-IP8_Plugins/blob/main/plugin2_1.PNG)
+
+По умолчанию загруженный плагин не активен. Для включения плагина следует установить флажок на имени плагина и нажать кнопку Сохранить/загрузить.
+![link!](https://github.com/Tekon-Avtomatika/KUN-IP8_Plugins/blob/main/plugin2_3.PNG)
+
+По необходимости выполнить настройку плагина
+![link!](https://github.com/Tekon-Avtomatika/KUN-IP8_Plugins/blob/main/plugin2_2.PNG)
+
+## Вывод отладочной информации в лог КУН-IP
+Для вывода отладочной информации используйте функцию print в плагинах.
+
+Лог КУН-IP доступен по адресу http://192.168.1.100/cgi-bin/log.cgi
+
+Пример отображение информации о запуске плагина:
+
+```
+...
+Sep 20 10:46:55 cun-ng systemd[1]: Created slice system-luaext.slice.
+Sep 20 10:46:55 cun-ng systemd[1]: Started CUN Hardware Management Daemon Lua Extention /etc/luaext.d/plugin2/service.lua.
+Sep 20 10:46:55 cun-ng sh[581]: Plugin2 service START
+Sep 20 10:46:55 cun-ng sh[581]: Plugin2 service STEP
+...
+```
+
